@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body{
+            background-color: rgb(207, 123, 90);
+            font-weight: bolder;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Recrutamento de hérois</h1>
+    <h3>Seu sexo</h3>
+   <label for="M"><input type="radio" value= "M" name="sex" id="M">M</label>
+   <label for="F"><input type="radio" value="F" name="sex" id="F">F</label>
+   <label for="O"><input type="radio" value="Outro" name="sex" id="O">Outro</label>
+   <p>
+    <button id="button">Select</button>
+   </p>
+   <h3 id="res"></h3>
+    <script>
+        //window.alert("Olá bem vindo ao recrutamento de hérois para o governo!")
+       const button = document.querySelector('#button');
+       //Seleciona o botão para os codigos
+       //Logo abaixo é criado uma função com o butão do tipo Click e é uma função anônima
+        button.addEventListener('click' ,(event) =>{
+        let checkboxe = document.querySelectorAll('input[name ="sex"]:checked')
+        //O nome ":checked" é para sinalizar de que so irá buscar as que forem marcadas
+        //A lista fazia para receber a resposta
+        let output = [];
+        //Usa a varivavel.pesquisa dentro de checkbox o valor(no caso o marcado)
+        //E depois empurra(PUSH) para a lista com o valor marcado(checkbox.value)
+        checkboxe.forEach((checkbox) => {
+            output.push(checkbox.value)
+            console.log(output)
+       });
+       //Impremi o valor
+       //document.write("Você selecionou " , output)
+    
+            if (output == "M"){
+                const result = document.getElementById('res').innerHTML = 'Sexo M'
+            }
+            else if (output == "F"); {
+                const result = document.getElementById('res').innerHTML = 'Sexo F'  
+            }
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body{
+            background-color: rgb(207, 123, 90);
+            font-weight: bolder;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+    <body>
+        <h1>Recrutamento de hérois</h1>
+        <h3>Seu sexo</h3>
+    <label for="M"><input type="radio" value= "M" name="sex" id="M">M</label>
+    <label for="F"><input type="radio" value="F" name="sex" id="F">F</label>
+    <label for="O"><input type="radio"value="O" name="sex" id="O">Outro</label>
+    <p>
+        <button id="button">Select</button>
+    </p>
+    <h3 id="res"></h3>
+
+        <script>
+            const button = document.querySelector('#button');
+            button.addEventListener('click' ,(event) =>{
+                let checkboxe = document.querySelectorAll('input[name ="sex"]:checked')
+                //O nome ":checked" é para sinalizar de que so irá buscar as que forem marcadas
+                //Output será a lista vazia que irá receber a Query em 'LN 37'
+                let output = [];
+                //Usa a varivavel.pesquisa dentro de checkbox o valor(no caso o marcado)
+                //E depois empurra(PUSH) para a lista com o valor marcado(checkbox.value)
+                checkboxe.forEach((checkbox) => {
+                    output.push(checkbox.value)
+                    //Push assim como no python funciona como APPEND.
+                    //console.log(output)
+                });
+                checkboxe.forEach((checkbox) => {
+                    //Validade para mostrar qual o input a pessoa marcou.
+                    
+                    switch (checkbox.value){
+                        case "M":
+                            var result = document.getElementById('res').innerHTML = 'É homem';
+                            break;
+                        case "F":
+                            var result = document.getElementById('res').innerHTML = 'É mulher';
+                            break;
+                        case "O":
+                            var result = document.getElementById('res').innerHTML = 'outro';
+                            break;
+                    }
+                });
+                // document.write("Você selecionou " , output)
+                //O document.write tem interferência com o Switch, o resultado do Switch
+                //Sai na página principal e o document.write cria uma nova na qual o elemento de id RES
+                //Não está disponivél. 
+                
+            }
+    );
+    </script>
+    </body>
+</html
