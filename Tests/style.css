@@ -1,0 +1,85 @@
+:root {
+    --bg-color: rgba(0, 0, 0, 0.74);
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.menu-item a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 0;
+    
+}
+.menu-item a:hover{
+    font-weight: 900;
+    transition: 0.1s ease-in-out;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Arrows{
+    height: 2.8rem;
+    width: auto;
+}
+
+.link-pages{
+    border: solid 0px rgba(95, 158, 160, 0);
+    transition: 0.9s ease-in-out;
+}
+.link-pages:hover{
+    border-width: 2rem;
+}
+.image{
+    border-radius: 100px;
+    height: 84vmin;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.9rem;
+    text-decoration: none;
+    text-shadow: rgb(0, 0, 0) 4px 2px 1px;
+   
+}
+
+.title::after{
+    content: " ";
+    height: 4px;
+    width: 0%;
+    background-color: rgb(255, 0, 200);
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    transition: 1s ease-in-out;
+}
+
+.title:hover::after{
+    width: 100%;
+}
