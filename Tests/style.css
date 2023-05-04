@@ -29,7 +29,7 @@ body{
 }
 .menu-item a:hover{
     font-weight: 900;
-    transition: 0.1s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 main{
     display: flex;
@@ -39,15 +39,14 @@ main{
 .Arrows{
     height: 2.8rem;
     width: auto;
-}
-
-.link-pages{
     border: solid 0px rgba(95, 158, 160, 0);
     transition: 0.9s ease-in-out;
 }
-.link-pages:hover{
-    border-width: 2rem;
+
+.Arrows:hover{
+    border-width: 1rem;
 }
+
 .image{
     border-radius: 100px;
     height: 84vmin;
