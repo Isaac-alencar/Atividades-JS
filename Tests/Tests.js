@@ -9,7 +9,6 @@ arrow_rigth.addEventListener('click' , ()=>{
         count++
         image.src = array[0+count];
     }
-    //length > count ? image.src = array[count++] : false;
 })
  arrow_left.addEventListener('click',()=>{
     if(count <= length){
