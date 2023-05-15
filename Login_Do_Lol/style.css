@@ -1,0 +1,102 @@
+body{
+    overflow: hidden;
+    padding: 0rem;
+    margin: 0rem;
+}
+main{
+    display: flex;
+    height: 100rem;
+}
+.a{
+    margin-left: 1rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b{
+    width: 100%;
+    margin-left: 1rem;
+    background-size: cover;
+    background-color: navy;
+}
+.b img{
+    background-size: cover;
+    height: 100vmin;
+    width: auto;
+}
+.logo{
+    height: 8rem;
+    width: 14rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form label{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form input{
+    margin-bottom: 1rem;
+    width: 16rem;
+    border-style: none;
+    height: 2.9rem;
+    background-color: rgba(78, 78, 78, 0.189);
+    
+}
+form input::placeholder{
+    color: rgba(0, 0, 0, 0.292);
+    font-size: 1rem;
+    padding-left: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+ul li{
+    margin-left: 0.2rem;
+    border-radius: 10px;
+}
+.plataforms{
+    display: flex;
+    align-items: center;
+    padding: 14px 0px 0px;
+}
+.google{
+    background-color: rgba(169, 169, 169, 0.476);
+    padding: 0px 38px 0px
+}
+.facebook{
+    background-color: blue;
+    padding: 0px 38px 0px;
+    list-style: none;
+}
+.apple{
+    background-color: rgb(0, 0, 0);
+    padding: 0px 38px 0px;
+}
+.icon{
+   
+    height: 24px;
+    padding: 2px;
+}
+.icon_facebook{
+    height: 24px;
+    padding: 2px;
+}
+.icon_apple{
+    height: 24px;
+    padding: 2px;
+}
+.save_acc{
+    display: flex;
+    position: relative;
+    left: -30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
