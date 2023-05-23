@@ -5,6 +5,7 @@ const arrow_rigth = document.getElementById('Right')
 const image = document.getElementById('image')
 let count = 0
 let length = array.length-1
+function moveTitle(){
 arrow_rigth.addEventListener('click' , ()=>{
     if(length > count){
         count++
@@ -21,6 +22,7 @@ arrow_rigth.addEventListener('click' , ()=>{
         image.src = array[0]
     }
  })
+}
  /*End of the Effect*/
  /*left Arrow´s Effect Title*/
  const title = document.getElementById('text')
