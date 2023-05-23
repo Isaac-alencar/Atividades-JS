@@ -31,6 +31,7 @@ main{
     display: block;
     width: 100%;
 }
+
 .input{
     width: 100%;
     background-color: rgba(128, 128, 128, 0.346);
@@ -43,10 +44,12 @@ main{
     padding: 25px 10px 10px;
     margin-bottom: 10px;
 }
+
 .input:focus{
     background-color: whitesmoke;
     border: 2px solid rgb(128, 128, 128);
 }
+
 .login_config span{
     position: absolute;
     margin: 20px;
@@ -57,6 +60,7 @@ main{
     font-weight: 700;
     transition: all 200ms ease;
 }
+
 .login_config .span-active{
     font-size: 0.7em;
     margin: 8px 14px;

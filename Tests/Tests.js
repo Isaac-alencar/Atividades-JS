@@ -25,18 +25,18 @@ arrow_rigth.addEventListener('click' , ()=>{
  /*left Arrow´s Effect Title*/
  const title = document.getElementById('text')
  arrow_left.addEventListener('mouseenter' , () => {
-    title.style.cssText = 'transform: translateX(-45%);'+'transition:0.6s ease-in-out;'
+    title.style.cssText = 'margin-left:5px;'+'transition:0.6s ease-in-out;'
  })
  arrow_left.addEventListener('mouseleave' , () => {
-    title.style.cssText = 'transform: translateX(-50%);'+'transition:0.6s ease-in-out;'
+    title.style.cssText = 'margin-left:5px'+'transition:0.6s ease-in-out;'
  })
 /*End of the Effect*/
 /*Right Arrow´s Effect Title*/
 arrow_rigth.addEventListener('mouseenter' , () => {
-   title.style.cssText = 'transform: translateX(-55%);'+'transition:0.6s ease-in-out;'
+   title.style.cssText = 'margin-right:5px;'+'transition:0.6s ease-in-out;'
 })
 arrow_rigth.addEventListener('mouseleave' , () => {
-   title.style.cssText = 'transform: translateX(-50%);'+'transition:0.6s ease-in-out;'
+   title.style.cssText = 'margin-right:5px;'+'transition:0.6s ease-in-out;'
 })
 /*End of the Effect*/
 

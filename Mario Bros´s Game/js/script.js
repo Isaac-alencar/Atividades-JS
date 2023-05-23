@@ -17,7 +17,7 @@ const jump = () => {
     },1000);
 }
 function gameOver(cloudsPosition , pipePosition, marioPosition){
-    if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 100){
+    if(pipePosition <= 110 && pipePosition > 0 && marioPosition < 100){
         clouds.style.animation = 'none';
         clouds.style.left = `${cloudsPosition}px`
         pipe.style.animation = 'none';
@@ -25,7 +25,7 @@ function gameOver(cloudsPosition , pipePosition, marioPosition){
 
         mario.style.bottom = `${marioPosition}px`;
         mario.src = 'images/game-over.png'
-        mario.style.width = `75px`;
+        mario.style.width = `70px`;
         mario.style.marginLeft = '50px'
         mario.style.animation = 'none';
         clearInterval(loop)
@@ -38,8 +38,6 @@ const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
     gameOver(cloudsPosition , pipePosition, marioPosition)
-   
-    
 }, 10);
 
 document.addEventListener('keydown' , jump)
