@@ -1,28 +1,32 @@
 /*Next Image button */
-const array = ['images/Pratice.jpg', 'images/image2.jpg' , 'images/image3.jpg']
+const array = ['images/Pratice.jpg', 'images/image2.jpg' ,'images/image3.jpg']
 const arrow_left = document.getElementById('Left')
 const arrow_rigth = document.getElementById('Right')
 const image = document.getElementById('image')
 let count = 0
 let length = array.length-1
 function moveTitle(){
-arrow_rigth.addEventListener('click' , ()=>{
-    if(length > count){
-        count++
-        image.src = array[0+count];
-    }
-})
- arrow_left.addEventListener('click',()=>{
-    if(count <= length){
-        count--
-        image.src = array[count]
-    }
-    if(count <= 0){
-        count = 0
-        image.src = array[0]
-    }
- })
-}
+   arrow_rigth.addEventListener('click' , ()=>{
+       if(length > count){
+           count++
+           image.src = array[count];
+       }
+       else{
+         count = 0
+         image.src = array[count]
+       }
+   })
+    arrow_left.addEventListener('click',()=>{
+       if(count > 0){
+          count--
+          image.src = array[count];
+       }
+       else{
+         count = length
+         image.src = array[count]
+       }
+    })
+   }
  /*End of the Effect*/
  /*left Arrow´s Effect Title*/
  const title = document.getElementById('text')
