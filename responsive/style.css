@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgba(77, 77, 77, 0.951)  , rgba(12, 228, 203, 0.996) );
+}
+.img{
+    height: 15rem;
+    padding-left: 3%;
+}
+.material{
+    height: 3rem;
+    background-color: rgba(12, 228, 203, 0.996);
+    border-radius: 60px;
+    visibility: hidden;
+}
+.material:hover{
+    background-color: white;
+    box-shadow: 2px 2px 0px rgba(12, 228, 203, 0.996);
+}
+@media screen and (max-width:576px) {
+    header nav a{
+        display: none;
+    }
+    .material{
+    visibility: visible;
+    }
+    .img{
+        height: 15rem;
+        padding-left: 8%;
+    }
+}
+/* @media  screen and (max-width:) {
+    
+} */
+header nav{
+    gap: 30px;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+header nav a:hover{
+    border-bottom: 2px solid;
+    border-color: rgba(12, 228, 203, 0.996);
+    
+}
+header nav a{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 900;
+    transition: 0.2s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
+header span{
+    color: rgb(255, 255, 255);
+}
+header h1{
+    cursor: pointer;
+    color: rgb(0, 221, 255);
+    margin-left: 1rem;
+}
+
+main{
+    margin-top: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+    width: 80%;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(0, 251, 255);
+    margin-left: 1rem;
+}
+main span{
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+main h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main h3{
+    background-color: white;
+    border-radius: 90px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+main h3:hover{
+    background-color: rgba(255, 255, 255, 0.257);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 4px 0px black;
+}
+main ul{
+    color: rgb(238, 255, 0);
+    font-size: 1.2rem;
+    line-height: 40px;
+    border-top: 4px solid white;
+}
+.list{
+    color: white;
+}
