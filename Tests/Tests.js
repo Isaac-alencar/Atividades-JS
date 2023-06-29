@@ -1,6 +1,5 @@
 
 const array = ['images/Pratice.jpg', 'images/image2.jpg' ,'images/image3.jpg']
-const cor = ('red' , '#F0F8FF' , 'pink')
 const title = document.getElementById('text')
 const arrow_left = document.getElementById('Left')
 const arrow_rigth = document.getElementById('Right')
@@ -31,7 +30,6 @@ function moveLeft(){
  arrow_left.addEventListener('mouseleave' , () => {
     title.style.cssText = 'margin-left:5px'+'transition:0.6s ease-in-out;'
  })
-
 arrow_rigth.addEventListener('mouseenter' , () => {
    title.style.cssText = 'margin-right:5px;'+'transition:0.6s ease-in-out;'
 })
