@@ -73,34 +73,24 @@ main{
 
 /* TITULO */
 .title{
+    
     color: rgb(255, 255, 255);
     position: absolute;
     text-align: center;
+    padding-bottom: 2px;
 }
 
-
-.title::after{
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid red;
-    width: 0%;
-    bottom: 0rem;
-    left: 0rem;
-    background-color: red;
-    transition: 1s ease-in-out;
-}
-/* .title::after{
+ .title::after{
     content: " ";
     height: 4px;
     width: 0%;
-    background-color:  var(--backColor,rgb(255, 0, 200));
+    background-color: rgb(255, 0, 0);
     position: absolute;
     bottom: 0rem;
     left: 0rem;
     transition: 1s ease-in-out;
-}*/
+}
 
 .title:hover::after{
     width: 100%;
-} 
- 
+}

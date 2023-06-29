@@ -1,23 +1,20 @@
 
 const array = ['images/Pratice.jpg', 'images/image2.jpg' ,'images/image3.jpg']
-
+const cor = ('red' , '#F0F8FF' , 'pink')
+const title = document.getElementById('text')
 const arrow_left = document.getElementById('Left')
 const arrow_rigth = document.getElementById('Right')
 const image = document.getElementById('image')
-const title = document.getElementById('text')
 let count = 0
-
 function moveRight(){
    if(count === array.length-1){
-      count = 0
-      image.src = objeto[0].back[count]
+      count = 0  
+      image.src = array[count]
    } else {
       count++
-      image.src = objeto[0].back[count]
-   } 
-   title.style.setProperty('--backColor', `${style[count]}`)
+      image.src = array[count]
+   }
 }
-
 function moveLeft(){
    if(count === 0){
       count = array.length-1
@@ -26,7 +23,6 @@ function moveLeft(){
       count--
       image.src = array[count]
    }
-   return count
 }
 
  arrow_left.addEventListener('mouseenter' , () => {
