@@ -5,6 +5,7 @@ const arrow_left = document.getElementById('Left')
 const arrow_rigth = document.getElementById('Right')
 const image = document.getElementById('image')
 let count = 0
+console.log(window.getComputedStyle(title , '::after'));
 function moveRight(){
    if(count === array.length-1){
       count = 0  

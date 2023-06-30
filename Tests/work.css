@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 575px) {
+    .img-top{ 
+       background-image: url(images/world_mapMobi.jpg);
+       width: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain;
+    }
+    .label-search input{
+       display: none;
+    }
+}
+@media screen and (min-width:576px) {
+    .img-top{
+        background-image: url(https://images6.alphacoders.com/400/thumb-1920-400645.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+}
+body{
+    background-color: black;
+}
+
+.menu{
+    /* border-bottom: 4px rgba(255, 255, 255, 0.861) solid; */
+}
+
+/* .label-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .label-search input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 1rem;
+} */
