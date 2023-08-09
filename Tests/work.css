@@ -4,42 +4,182 @@
     box-sizing: border-box;
 }
 @media screen and (max-width: 575px) {
-    .img-top{ 
-       background-image: url(images/world_mapMobi.jpg);
-       width: 100%;
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: contain;
+    
+    .label-search{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .label-search input{
-       display: none;
+
+    .input{
+        border-radius: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        width: 300px;
+        height: 40px;
+        margin-bottom: 1rem;
+        outline: none;
+        background-color: rgb(226, 223, 223);
     }
 }
 @media screen and (min-width:576px) {
     .img-top{
-        background-image: url(https://images6.alphacoders.com/400/thumb-1920-400645.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 100%;
+        height: 30rem;
+    }
+    
+    .input{
+        border-radius: 20px;
+        border: 2px solid rgb(0, 0, 0);
+        width: 500px;
+        height: 50px;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-top: 0.3rem;
+        outline: none;
+        background-color: rgb(226, 223, 223);
+    }
+
+    .about p{
+        font-size: 30px;
+        line-height: 3rem;
     }
 }
+/* SSSS */
 body{
-    background-color: black;
+    background-color: rgba(66, 66, 66, 0.488);
 }
-
 .menu{
-    /* border-bottom: 4px rgba(255, 255, 255, 0.861) solid; */
+    background-color: black;
+    border-bottom: 4px rgb(255, 255, 255) solid;
 }
 
-/* .label-search{
+.about{
+    font-family: sans-serif;
+    background-color: rgba(240, 248, 255, 0);
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(19, 1, 1, 0.839);
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+}
+
+.about h1{
+    color: rgb(0, 0, 0);
+}
+
+.img-top{ 
+    width: 100%;
+ }
+
+.label-search{
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 4rem;
+    transition: 200ms ease;
+}
+
+.label-search span{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 20px;
+
+    cursor: text;
+    text-transform: uppercase;
+
+}
+
+/* .label-search span{
+    position: absolute;
+    margin: 10px;
+    font-weight: 700;
+    cursor: text;
+    text-transform: uppercase;
 } */
 
-/* .label-search input{
-    width: 300px;
-    height: 30px;
-    margin-bottom: 1rem;
-} */
+.back-theme{
+    background-image: url(https://.-1610987067555-2947ed187d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=924&q=80);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.imgs-menu{
+    display: flex;
+    margin-left: 2rem;
+    overflow: auto;
+    margin-right: 2rem;
+    
+}
+.imgs{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    margin-right: 3.9rem;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    border: 8px solid rgba(255, 255, 255, 0.55);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 60px;
+}
+
+.imgs-button{
+    color: rgba(255, 255, 255, 0.934);
+    font-family: sans-serif;
+    font-size: 18px;
+    height: 4rem;
+    width: 8rem;
+    margin: 20px;
+    border-color: rgba(0, 0, 0, 0.673);
+    border-radius: 50px;
+    background-color: rgba(22, 58, 175, 0.825);
+    transition: 200ms ease;
+}
+.imgs-button:hover{
+    background-color: rgba(11, 212, 234, 0.838);
+}
+/* SCROLL BAR */
+::-webkit-scrollbar-track{
+    background-color: rgba(66, 66, 66, 0.237);
+    border-radius: 12px;
+    background: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(22, 58, 175);
+    border-radius: 12px;
+}
+/* SCROLL BAR */
+
+.footer-part{
+    background-image: url(images/footer-part_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+}
+.footer-part div{
+    padding: 20px;
+    text-align: center;
+    border: 4px solid white;
+}
+.footer-part h2{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    line-height: 70px;
+}
