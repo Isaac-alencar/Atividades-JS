@@ -1,8 +1,8 @@
-import App from "../App1";
+import App from "../AppLol";
 import './components.css'
 
-
 export default function Banner(){
+    
         return (
             <header className="Banner">
                 <h1>Seja Bem-vindo invocador</h1>

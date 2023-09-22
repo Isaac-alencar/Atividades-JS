@@ -1,6 +1,6 @@
 import React , { useEstate} from 'react';
 import './App.css'
-import Board from './components/Board';
+import Board from './componentsTicTacToe/Board';
 
 export const winnerPatterns = [
     [0,1,2],
